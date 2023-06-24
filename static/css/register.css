@@ -1,0 +1,145 @@
+/* html,body {
+    height: 100%;
+    } */
+    
+    .card-title {
+    }
+    .size{
+      float:center;
+    }
+    
+    .global-container{
+      background-size: cover;
+      background: url("https://wallpaperaccess.com/full/459817.jpg") top center;
+    /* height:100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .global-container1{
+      height:120vh;
+    }
+    .alert{
+        text-align: center;
+margin-bottom: 1rem;
+    }
+    form{
+    font-size: 14px;
+    margin-top: 5%;
+    }
+    
+    .card-title{ font-weight:700; font-size:250%; color: white;}
+    
+    .btn{
+    font-size: 14px;
+    margin-top:20px;
+    }
+    
+    
+    .login-form {
+    width: 30%;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 10%;
+    padding: 1%;
+    }
+    .register-form{
+      width:80%;
+      margin:20px;
+      background: rgba(0, 0, 0, 0.2);
+      /* position:absolute; */
+      /* right:5px;
+      top: 125px; */
+    }
+    
+    .sign-up{
+    text-align:center;
+    padding:20px 0 0;
+    font-weight:600;
+    color: white;
+    font-size: 120%;
+    }
+    
+    .alert{
+    font-size: 13px;
+    margin-top:20px;
+    z-index: 10000;
+    }
+    .btn-login1{
+      background-color: #D91B5C;
+      border: #D91B5C;
+    }
+    .btn-login1:hover{
+      background-color: #D91B5C;
+      border: #D91B5C;
+    }
+    .btn-login{
+      background-color: #95389E;
+      border: #95389E;
+    }
+    .btn-login:hover{
+      background-color: #FF74B1;;
+      border: #FF74B1;
+    }
+    a{
+      color:#D91B5C;
+    }
+    a:hover{
+      color: #FF74B1;
+    }
+    .login-label{
+      font-weight: 600;
+      color:white;
+      margin-bottom: 1%;
+    }
+    .login-input{
+      font-size: 110%;
+    }
+    .card-text1{
+      color:white;
+      font-weight:600;
+       font-size:120%;
+    }
+    .form-group {
+    margin-bottom: 1rem;
+    }
+    .btn-block {
+    display: block;
+    width: 100%;
+    }
+    .nit{
+      margin: 0;
+position: absolute;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+    }
+    .nit-img{
+      width:15%;
+    }
+    .card:hover {
+        background: rgba(0, 0, 0, 0.2);
+        }
+        label {
+            float: left;
+        }
+    @media screen and (max-width:550px){
+      .register-form{
+        width:90%;
+      }
+      .login-form {
+        width: 100%;
+       
+        }
+        .nit{
+          margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+        }
+        .nit-img{
+          width:70%;
+        }
+    }
+    

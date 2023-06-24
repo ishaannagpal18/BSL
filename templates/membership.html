@@ -1,0 +1,192 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Membership
+{% endblock %}
+
+{% block content %}
+
+    <!-- fixed-column-image -->
+    <div class="fixed-column-image-wrap">
+        <div class="fixed-column-image fs-wrapper">
+            <div class="bg hor_scroll"  data-bg="{% static 'images/bg/2.jpg'%}"></div>
+            <div class="overlay"></div>
+            <div class="overlay-dec"></div>
+        </div>
+        <footer class="column-footer">
+            <div class="column-footer_arrow-dec_wrap color-bg">
+                <div class="arrow_dec_wrap">
+                    <div class="arrow_dec"></div>
+                </div>
+            </div>
+            <div class="column-footer_head">Scroll  Down</div>
+            <div class="column-footer_content fl-wrap">
+                <div class="column-footer_title"><span>Our  Membership</span></div>
+            </div>
+            <div class="dir-arrow"></div>
+        </footer>
+        <div class="fci_progress-bar-wrap dark-bg">
+            <div class="ver_progress-bar_wrap">
+                <div class="ver_progress-bar color-bg"></div>
+            </div>
+            <div class="pbw_animicon">
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="hero-arrows_dec"></div>
+    </div>
+    <!-- fixed-column-image end -->
+    <!-- scroll-nav-container -->
+    <div class="scroll-nav-container">
+        <div class="page-scroll-nav">
+            <div class="scroll-down-container">
+                <div class="scroll-down-wrap">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden_wrap_btn"><span></span></div>
+            <!-- <nav class="scroll-init page-scroll-nav_wrap">
+                <ul>
+                    <li><a class="scroll-link fbgs act-sec" href="#sec1"  data-bgtext="Home"  data-bgnum="01"><span>Hero</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec2"  data-bgtext="About"  data-bgnum="02"><span>About</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec3"  data-bgtext="Our Serrvices"  data-bgnum="03"><span>Services</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec4"  data-bgtext="Our Works"  data-bgnum="04"><span>Folio</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec5"  data-bgtext="Team"  data-bgnum="05"><span>Team</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec6"  data-bgtext="Clients"  data-bgnum="06"><span>Clients</span></a></li>
+                </ul>
+            </nav> -->
+            <div class="section-counter color-bg">
+                <div class="section-counter_cuurent"><span>01</span></div>
+                <div class="section-counter_total"></div>
+            </div>
+        </div>
+    </div>
+    <!-- scroll-nav-container end -->
+    <!-- column-wrap -->
+    <div class="column-wrap hcw_sin">
+        <div class="content fl-wrap full-height">
+   <!-- section  -->
+   <section id="sec1" class="scroll_sec top top-mobile">
+    <div class="container">
+        <div class="section-title">
+            <h2>MEMBERSHIP</h2>
+            <p>WHO CAN BE THE MEMBER?</p>
+        </div>
+        <!-- items-list-conatiner -->
+        <div class="items-list-conatiner">
+            <!-- list-item -->
+            <div class="list-item  fl-wrap" data-bgsrc="{% static 'images/corporat-membership.png'%} ">
+                <div class="reval-image">
+                    <div class="bg"></div>
+                </div>
+                <div class="list-item_link fl-wrap">
+                    <div class="list-item-header"><span>01</span>Corporate Membership</div>
+                    <div class="list-item-details">
+                        <ul class="pdcw_list fl-wrap">
+                            <li>Brands, Retailers, E-tailers</li>
+                            <li>Buying Houses</li>
+                            <li>Liaison Offices</li>
+                        </ul>
+                    </div>
+                    <div  class="list-item-link_dec color-bg"></div>
+                </div>
+                <div class="list-item_content fl-wrap">
+                    <div class="piechart-holder" data-skcolor="#fff">
+                        
+                        <img style="width:100%" src="{% static 'images/pic2.jpg'%}" alt="">
+                        
+                    </div>
+                    <div class="list-item_content_wrap">
+                        <h4>Membership Details</h4>
+                        <p>The CEO/MD of these companies will become the member and thencan nominate or become a direct Member (Sourcing Head /Buying Head of the Organization) Member Companies need to be 250 Cr plus in revenue to qualify</p>
+                        
+                        <!-- <p>Cras mattis iudicium purus sit amet fermentum at nos hinc posthac, sitientis piros afros. Lorem ipsum dolor sit amet, consectetur adipisici elit, petierunt uti sibi concilium totius Galliae in diem sed eius mod tempor incidunt ut labore et dolore magna aliqua.</p> -->
+                        <!-- <div class="price-content">
+                            <span>Price:</span>
+                            150$ - 560$
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- list-item end -->
+            <!-- list-item -->
+            <div class="list-item fl-wrap" data-bgsrc="{% static 'images/individual-membership.png'%}">
+                <div class="reval-image">
+                    <div class="bg"></div>
+                </div>
+                <div class="list-item_link fl-wrap">
+                    <div class="list-item-header"><span>02</span>Individual Membership</div>
+                    <div class="list-item-details">
+                        <ul class="pdcw_list fl-wrap">
+                            <li>Retired Individual</li>
+                            <li>Semi Retired Individual</li>
+                            <li>Individual Contributor</li>
+                        </ul>
+                    </div>
+                    <div class="list-item-link_dec color-bg"></div>
+                </div>
+                <div class="list-item_content fl-wrap">
+                    <div class="piechart-holder" data-skcolor="#fff">
+                        
+                        <img style="width:100%" src="{% static 'images/pic3.jpg'%}" alt="">
+                        
+                    </div>
+                    <div class="list-item_content_wrap">
+                        <h4>Membership Details</h4>
+                        <p>Member Organizations may also take multiple membership based slab based (50k per additional member) . Ex: The Sustainability head can be nominated as part of organization</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- list-item end -->
+            <!-- list-item -->
+            <div class="list-item fl-wrap" data-bgsrc="{% static 'images/affiliate-membership.png'%}">
+                <div class="reval-image">
+                    <div class="bg"></div>
+                </div>
+                <div class="list-item_link fl-wrap">
+                    <div class="list-item-header"><span>03</span>Affiliated Association</div>
+                    <div class="list-item-details">
+                        <ul class="pdcw_list fl-wrap">
+                            <li>AEPC</li>
+                            <li>CMAI</li>
+                            <li>TEA</li>
+                            <li>RAI</li>
+                            <li>Yarn/Accessories</li>
+                        </ul>
+                    </div>
+                    <div  class="list-item-link_dec color-bg"></div>
+                </div>
+                <div class="list-item_content fl-wrap">
+                    <div class="piechart-holder" data-skcolor="#fff">
+                        <div class="piechart-holder" data-skcolor="#fff">
+                        
+                            <img style="width:100%" src="{% static 'images/pic2.jpg'%}" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="list-item_content_wrap">
+                        <h4>Membership Details</h4>
+                                    <p>Membership based on formal meetings Contracts , define the relationship and what we work on. Ex : A) Knowledge Sharing. <br>B) Discussion on key Initiatives.<br> C) Coworked Initiatives <br> D) Data Sharing etc.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- list-item end -->										
+            <!-- list-item -->
+            
+            <!-- list-item end -->																
+        </div>
+        <!-- items-list-conatiner end-->
+    </div>
+    <div class="section-number"> <span>0</span>4. </div>
+    <div class="sec-dec" style="right: -270px; bottom: -15%"></div>
+    <div class="dec_cirlce" style="left: -120px; bottom: 150px"><span></span></div>
+    <div class="sec-lines"></div>
+</section>
+</div>
+</div>
+<!-- section end-->
+    {% endblock %}

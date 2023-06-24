@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{% block title%}
+
+            {% endblock %}</title>
+        <!--=============== css  ===============-->	
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/plugins.css'%} ">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/map-style.css'%} ">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%} ">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/color.css'%} ">
+        
+        {% block style %}
+
+  {% endblock %}
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="{% static 'images/logo-2.png'%} ">
+    </head>
+    <body>
+        {% block css_block %}
+
+    {% endblock %}
+        <!--loader-->
+        <div class="main-loader-wrap">
+            <div class="loading-spinner"><img style="width:100%" src="{% static 'images/logo-white.png'%} " alt=""></div>
+        </div>
+        <!--loader end-->
+        <!--  main start  -->
+        <div id="main">
+            <!--  header main-header  -->
+            <header class="main-header">
+                
+                <!--logo-->
+                <a href="{% url 'home'%}" class="logo-holder color-bg"><img src="{% static 'images/logo-white.png'%} " alt=""></a>
+                <!--logo end-->
+                <!--  hero-wrap-social  -->
+
+                <div class="social-container">
+                    <a href="{% url 'home'%}"><span class="social-container_title">Home</span></a>
+                    <a href="{% url 'auditorium'%}"><span class="social-container_title">Web Series (The Head Turners)</span></a>
+                    <a href="{% url 'App_Login:register'%}"><span class="social-container_title">Glocal Manoeuvre Series</span></a>
+                    <!-- <a href="{% url 'about'%}"><span class="social-container_title">About Us</span></a>
+                    <a href="{% url 'membership'%}"><span class="social-container_title">Membership</span></a>
+                    <a href="{% url 'gallery'%}"><span class="social-container_title">Gallery</span></a> -->
+                  
+                </div>
+                
+                <!--  hero-wrap-social end  -->					
+                <!-- <div class="share_btn show_share"><strong>Share</strong> <span class="share_btn-icon"></span></div> -->
+                <!-- nav-button-wrap-->
+                <div class="nav-button-wrap">
+                    <div class="menu-button-text">Menu</div>
+                    <div class="nav-button but-hol">
+                        <span  class="ncs"></span>
+                        <span class="nos"></span>
+                        <span class="nbs"></span>
+                    </div>
+                </div>
+                <!-- nav-button-wrap end-->
+                <!-- <a href="{% url 'auditorium'%}" class="pr_btn"><span class="pr_btn_dots"></span><strong>Watch Live</strong> <i class="fal fa-angle-right"></i></a>	 -->
+            </header>
+            <!-- Header   end-->
+            <!--navigation-->
+            <div class="nav-holder isvis_menu">
+                <div class="nav-overlay fs-wrapper"></div>
+                <div class="nav-container">
+                    <div class="nav-title hid_vismen"> me<br>nu <span>.</span>  </div>
+                    <div class="hsd_dec2 hdec_d hid_vismen"></div>
+                    <div class="nav-wrap hid_vismen">
+                        <!-- nav -->
+                        <nav class="nav-inner" id="menu">
+                            <ul>
+                                <li>
+                                    <a href="{% url 'home'%}" class="act-link">Home</a>
+                                    <!--level 2 -->
+                                    <!-- <ul>
+                                        <li><a href="index.html">Slider</a></li>
+                                        <li><a href="index2.html">Carousel</a></li>
+                                        <li><a href="index3.html">Video</a></li>
+                                        <li><a href="index4.html">Slideshow</a></li>
+                                        <li><a href="index5.html">MultiSlideshow</a></li>
+                                        <li><a href="index6.html">Image</a></li>
+                                        <li><a href="coming-soon.html" target="_blank">Coming Soon</a></li>
+                                    </ul> -->
+                                    <!--level 2 end -->
+                                </li>
+                                <li><a href="{% url 'auditorium'%}">Web Series <span style="color:red">(The Head Turners)</span></a></li>
+                                <li><a href="{% url 'App_Login:register'%}">Glocal Manoeuvre Series</a></li>
+                                <li><a href="{% url 'about'%}">About Us</a></li>
+                                <li><a href="{% url 'membership'%}">Membership</a></li>
+                                <li><a href="{% url 'members'%}">Members</a></li>
+                                <li><a href="#">Events <i style="padding-left:20%; color:#070A52" class="fa fa-plus"></i></a>
+                                    <ul>
+                                        <li style="padding-bottom:2%"><a style="line-height:30px" href="{% url 'knit_event'%}">49th India International <br> Knit Fair </a></li><br>
+                                        <li><a href="#">Glocal Manoeuvre Series <i style="padding-left:20%; color:#070A52" class="fa fa-plus"></i></a>
+                                            <ul>
+                                                <li><a href="{% url 'powerplay1_event'%}">Powerplay-1</a></li>
+                                                <li><a href="{% url 'powerplay2_event'%}">Powerplay-2</a></li>
+                                                
+                                            </ul> 
+                                        </li>
+                                        
+                                        
+                                    </ul> 
+                                </li>
+
+                                <li><a href="{% url 'award'%}">Awards</a></li>
+                                <li>
+                                    <a href="{% url 'gallery'%}">Gallery</a>
+                                 
+                                    <!-- <ul>
+                                        <li><a href="portfolio.html">Creative Grid</a></li>
+                                        <li><a href="portfolio2.html">Column Grid</a></li>
+                                        <li><a href="portfolio3.html">Fullscreen Grid </a></li>
+                                        <li><a href="portfolio4.html">List</a></li>
+                                        <li>
+                                            <a href="#">Single</a>
+                                       
+                                            <ul>
+                                                <li><a href="portfolio-single.html">Style 1</a></li>
+                                                <li><a href="portfolio-single2.html">Style 2</a></li>
+                                                <li><a href="portfolio-single3.html">Style 3</a></li>
+                                                <li><a href="portfolio-single4.html">Style 4</a></li>
+                                            </ul>
+                                         
+                                        </li>
+                                    </ul> -->
+                                   
+                                </li>
+                                <li><a href="{% url 'contact'%}">Contact</a></li>
+                                <li><a href="#">Blog</a></li>
+                                
+                            </ul>
+                        </nav>
+                        <!-- nav end-->
+                    </div>
+                    <div class="nav_arrow hid_vismen"><span></span></div>
+                </div>
+            </div>
+            <!--navigation end-->
+            {% block content %}
+
+    {% endblock %}
+    <!--=============== scripts  ===============-->   
+    <script  src="{% static 'js/jquery.min.js'%} "></script>
+    <script  src="{% static 'js/plugins.js'%} "></script>
+    <script  src="{% static 'js/scripts.js'%} "></script>
+    <script  src="{% static 'js/map.js'%} "></script>
+    {% block js %}
+
+{% endblock %}
+</body>
+</html>

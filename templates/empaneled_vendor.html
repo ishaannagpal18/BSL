@@ -1,0 +1,295 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Empaneled Vendor
+{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="{% static 'css/register.css'%}" rel="stylesheet">
+<style>
+.dec_sec:before {
+    background: none;
+    }
+.column-wrap {
+min-height: 0vh;
+}
+.team-item {
+padding: 0 40px 0 0;
+}
+.global-container{
+    background: url("https://wallpaperaccess.com/full/5580644.jpg");
+
+}
+.card-title1{
+    font-size:1.7rem;
+    font-weight:500;
+    color:#000;
+}
+.card-title2{
+    font-size:1.8rem;
+    font-weight:600;
+    color:#000;
+}
+.card-title {
+margin-bottom: 0rem;
+}
+h6{
+    text-align:center;
+    font-size: 1.2rem;
+    font-weight:300;
+    margin-top:0.5rem;
+}
+hr{
+    border-top: 1px solid rgba(0,0,0,1);
+}
+.login-label{
+    color:#000;
+}
+label {
+float: none;
+}
+.btn-login {
+background-color: #070A52;
+border: #070A52;
+}
+.btn-login:hover {
+background-color: #47B5FF;
+border: #47B5FF;
+}
+h5 {
+font-size: 1.1rem;
+text-align: center;
+font-weight: 500;
+}
+@media only screen and (max-width: 768px){
+.team-item, .team-container .team-item:nth-child(even) {
+padding: 0 0 50px 0;
+}
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+    <!-- fixed-column-image -->
+    <div class="fixed-column-image-wrap">
+        <div class="fixed-column-image fs-wrapper">
+            <div style="height:100vh" class="bg hor_scroll"  data-bg="{% static 'images/banner19.jpg'%}"></div>
+            <div class="overlay"></div>
+            <div class="overlay-dec"></div>
+        </div>
+        <footer class="column-footer">
+            <div class="column-footer_arrow-dec_wrap color-bg">
+                <div class="arrow_dec_wrap">
+                    <div class="arrow_dec"></div>
+                </div>
+            </div>
+            <div class="column-footer_head">Scroll  Down</div>
+            <div class="column-footer_content fl-wrap">
+                <div class="column-footer_title"><span>Empaneled Vendor</span></div>
+            </div>
+            <div class="dir-arrow"></div>
+        </footer>
+        <div style="display:none;" class="fci_progress-bar-wrap dark-bg">
+            <div class="ver_progress-bar_wrap">
+                <div class="ver_progress-bar color-bg"></div>
+            </div>
+            <div class="pbw_animicon">
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="hero-arrows_dec"></div>
+    </div>
+    <!-- fixed-column-image end -->
+    <!-- scroll-nav-container -->
+    <div class="scroll-nav-container">
+        <div class="page-scroll-nav">
+            <div class="scroll-down-container">
+                <div class="scroll-down-wrap">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden_wrap_btn"><span></span></div>
+            <nav class="scroll-init page-scroll-nav_wrap">
+                <ul>
+                    <li><a class="scroll-link fbgs act-sec" href="#sec1"  data-bgtext="Empaneled Vendor "  data-bgnum="01"><span>Empaneled Vendor</span></a></li>
+
+
+                </ul>
+            </nav>
+            <div class="section-counter color-bg">
+                <div class="section-counter_cuurent"><span>01</span></div>
+                <div class="section-counter_total"></div>
+            </div>
+        </div>
+    </div>
+    <!-- scroll-nav-container end -->
+    <!-- column-wrap -->
+    <div class="column-wrap ">
+        <div class="content fl-wrap full-height">
+            <!-- section -->
+            
+            <!-- section end -->
+          
+            
+            
+            													
+            <!--section  -->	
+            <section style="padding:0" id="sec1" class="dec_sec">
+                <div class= "global-container padding" style="background-size:cover">
+                    <div class="card register-form">
+                         <div class="card-body">
+                        <h4 class="card-title card-title1 text-center">Vendor Registration with BSL <br> </h4>
+                        <h3 class="card-title card-title2 text-center">
+                            Register to get visible</h3><br>
+                            <div class="row">
+                               
+                                <div class="col-md-12">
+                                    <h5>Empaneled Vendor (₹10000 Annual Plus GST)</h5>
+                                </div>
+                            </div>
+                            <hr>
+                            <h6>Thank you for your interest. If you wish to apply for this status, please fill out this
+                                online Vendor/Supplier Registration Form.</h6>
+                                <hr>
+                        <!-- <h3 style="font-size:100%" class="card-title text-center">Payment Link- <a style="color:#537FE7" target="_blank" href="https://rzp.io/i/itU8yqQzJ4">https://rzp.io/i/itU8yqQzJ4</a></h3> -->
+                        
+                            <div class="card-text">
+                            {% if messages %}
+            
+                                    {% for message in messages %}
+                                    <div class="alert alert-info">
+                                        {{ message }}
+                                    </div>
+                                    {% endfor %}
+            
+                                {% endif %}
+                            <!--
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+                            <form method="post" name="myForm" enctype="multipart/form-data">
+                                {%  csrf_token %}
+            
+            
+                                <!-- to error: add class "has-danger" -->
+                                
+                                    
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Upload your image</label>
+                                            <input type="file" name="user_image" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                        </div><br>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Upload your company profile</label>
+                                            <input type="file" name="company_profile" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                        </div><br>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Upload a small video of your company</label>
+                                            <input type="file" name="small_video" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                        </div><br>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Your company's legalname</label>
+                                            <input type="text" name="company_name" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                        </div><br>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Business type</label><br><br>
+
+                                            <input type="checkbox" id="yarn" name="business_type" value="yarn">
+                                            <label class="login-label" for="yarn"> Yarn Manufacturer</label><br><br>
+                                            <input type="checkbox" id="fabric" name="business_type" value="fabric">
+                                            <label class="login-label" for="fabric"> Fabric Manufacturer ( Knits or Woven )</label><br><br>
+                                            <input type="checkbox" id="garment" name="business_type" value="garment">
+                                            <label class="login-label" for="garment"> Garment Manufacturer</label><br><br>
+                                            <input type="checkbox" id="home" name="business_type" value="home">
+                                            <label class="login-label" for="home"> Home Textiles</label><br><br>
+                                            <input type="checkbox" id="others" name="business_type" value="others">
+                                            <label class="login-label" for="others"> Others</label><br>
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">What kind of products does your company offer?</label>
+                                            <input type="text" name="kind_of_products" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Company website</label>
+                                            <input type="text" name="company_website" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Company address</label>
+                                            <textarea type="text" name="company_address" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Please provide information on the following: company founding year, company size, compliance.</label>
+                                            <textarea type="text" name="information" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Name of person representing the company</label>
+                                            <input type="text" name="name_of_person" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Contact email</label>
+                                            <input type="email" name="contact_email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div id="contact1" class="form-group">
+                                            <label class="login-label" for="exampleInputEmail1">Contact phone</label>
+                                            <input pattern="[1-9]{1}[0-9]{9}" type="tel" name="contact_phone" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                        </div>
+                                      
+                                        
+                                       
+                                     
+                                        
+                
+                                        
+                                        
+                                       
+                                   
+                                    
+                                       
+                                        <!-- <div id="password" class="form-group">
+                                            <label class="login-label" for="exampleInputPassword1">Password</label>
+                                            <input type="password" name="password" class="form-control form-control-sm" id="exampleInputPassword1" required>
+                                        </div> -->
+                                        
+                                        
+                                        
+                                        
+                                        
+                                          
+                                    
+                                
+                               
+                                    
+                                    
+                                    
+                                    <br>
+                                    
+            
+                                     
+                                  
+            
+            
+                                <!-- <button id="displayAmount" type="submit" class="btn btn-primary btn-block mt-2 btn-login submit" ></button> -->
+                                <button style="color:white; height:3rem;" type="submit" class="btn btn-primary btn-block mt-2 btn-login submit">
+                                    Submit
+                                    
+                                </button>
+                                
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dec_cirlce" style="left: -120px; bottom: -120px"><span></span></div>
+                <div class="dec_cirlce" style="right: -120px; top: 350px"><span></span></div>
+                <!-- <div class="sec-lines"></div> -->
+            </section>
+            <!--section end-->							
+            
+            
+            <!-- section end-->	
+            								
+        </div>
+    </div>
+    <!-- column-contaent end -->
+    {% endblock %}

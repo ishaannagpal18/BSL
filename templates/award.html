@@ -1,0 +1,116 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+About Us
+{% endblock %}
+
+{% block content %}
+
+    <!-- fixed-column-image -->
+    <div class="fixed-column-image-wrap">
+        <div class="fixed-column-image fs-wrapper">
+            <div class="bg hor_scroll"  data-bg="{% static 'images/journey.jpeg'%}"></div>
+            <div class="overlay"></div>
+            <div class="overlay-dec"></div>
+        </div>
+        <footer class="column-footer">
+            <div class="column-footer_arrow-dec_wrap color-bg">
+                <div class="arrow_dec_wrap">
+                    <div class="arrow_dec"></div>
+                </div>
+            </div>
+            <div class="column-footer_head">Scroll  Down</div>
+            <div class="column-footer_content fl-wrap">
+                <div class="column-footer_title"><span>Our  Story</span></div>
+            </div>
+            <div class="dir-arrow"></div>
+        </footer>
+        <div class="fci_progress-bar-wrap dark-bg">
+            <div class="ver_progress-bar_wrap">
+                <div class="ver_progress-bar color-bg"></div>
+            </div>
+            <div class="pbw_animicon">
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="hero-arrows_dec"></div>
+    </div>
+    <!-- fixed-column-image end -->
+    <!-- scroll-nav-container -->
+    <div class="scroll-nav-container">
+        <div class="page-scroll-nav">
+            <div class="scroll-down-container">
+                <div class="scroll-down-wrap">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden_wrap_btn"><span></span></div>
+            <nav class="scroll-init page-scroll-nav_wrap">
+                <ul>
+                    <li><a class="scroll-link fbgs act-sec" href="#sec1"  data-bgtext="Home"  data-bgnum="01"><span>BSL Mission</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec2"  data-bgtext="About"  data-bgnum="02"><span>Journey</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec3"  data-bgtext="Our Serrvices"  data-bgnum="03"><span>Testimonials</span></a></li>
+
+                </ul>
+            </nav>
+            <div class="section-counter color-bg">
+                <div class="section-counter_cuurent"><span>01</span></div>
+                <div class="section-counter_total"></div>
+            </div>
+        </div>
+    </div>
+    <!-- scroll-nav-container end -->
+    <!-- column-wrap -->
+    <div class="column-wrap hcw_sin">
+        <div class="content fl-wrap full-height">
+            <!-- section -->
+            <section id="sec1" class="scroll_sec top top-mobile">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Awards</h2>
+                        <p>Productive meeting of BSL association with Shri Piyush Goel, Minister of Textiles and Smt. Shubra, Trade Advisor
+
+                            <br> Fortunate and blessed to have an impactful meeting</p>
+                    </div>
+                    <div class="about_row">
+                        <div class="block_text">
+                            <!-- <h2>पंच पहल / PANCH PAHL</h2> -->
+                            <b><p>Representatives of BSL Team</p>
+                            <p>Motivated to promote "Make in India"</p>
+                            <p>Walk with govt. to skill workforce and upgrade production</p>
+                            <p>Geared up to walk with PM's agenda of "Developed Nation by 2047"</p>
+                            <p></p></b>
+
+                        </div>
+                        <div class="block_img">
+                            <img src="{% static 'images/award1'%} " class="respimg" alt="">
+                            <!-- <div class="about-img-hotifer dark-bg">
+                                <p>Your website is fully responsive so visitors can view your content from their choice of device.</p>
+                                <h4>Mark Antony</h4>
+                                <h5>Cyberbook CEO</h5>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="ticker-wrap fl-wrap">
+                        <div class="content-marquee-outer">
+                            <div class="content-marquee-inner">
+                                <div class="ticker" data-text="Brands and Sourcing Leaders Association">Brands and Sourcing Leaders Association</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-number"> <span>0</span>1. </div>
+                <div class="sec-dec" style="left: -270px; bottom: -5%"></div>
+                <div class="dec_cirlce" style="right: -120px; top: 350px"><span></span></div>
+                <div class="sec-lines"></div>
+            </section>
+            <!-- section end -->
+          
+            
+            <!-- section end-->									
+        </div>
+    </div>
+    <!-- column-contaent end -->
+    {% endblock %}

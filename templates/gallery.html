@@ -1,0 +1,268 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block title %}
+Gallery
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+    <!-- content-holder -->
+    <div class="content-holder">
+        <!-- aside-title -->
+        <div class="aside-title color-bg">
+            <h2>Our <br> Gallery</h2>
+            <div class="folio-category">
+                <span class="folio-category_title">Category :</span>
+                <span class="folio-category_item">All Gallery</span>
+            </div>
+            <div class="arrow_dec_wrap">
+                <div class="arrow_dec"></div>
+            </div>
+            <div class="count-folio">
+                <div class="num-album"></div>
+            </div>
+        </div>
+        <!-- aside-title end -->
+        <!-- gallery-filters-wrap-->
+        <!-- <div class="gallery-filters-wrap fixed-filters">
+            <div class="fixed-filters_title dark-bg2 filter-button"><span class="ft_dec"></span>Filters</div>
+            <div class="gallery-filters hid-filter">
+                <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*"><strong>All Projects</strong></a>
+                <a href="#" class="gallery-filter" data-filter=".web"><strong>Web Design</strong></a>
+                <a href="#" class="gallery-filter" data-filter=".photography"><strong>Photos</strong></a>
+                <a href="#" class="gallery-filter" data-filter=".branding"><strong>Branding</strong></a>
+                <a href="#" class="gallery-filter" data-filter=".uides"><strong>Ui Design</strong></a>
+            </div>
+            <div class="scroll-down-container target color-bg">
+                <div class="scroll-down-wrap">
+                    <div class="mousey hm-ms">
+                        <i class="fas fa-triangle"></i>
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--gallery-filters-wrap end-->				
+        <div class="folio-mask fs-wrapper"></div>
+        <!--  hero-showcase-wrap -->
+        <div class="hero-showcase-wrap fs-wrapper">
+            <div class="hero-showcase">
+                <div class="gallery-items init_hoverdir sf_true">
+                    <div class="gallery-items-container fl-wrap">
+                        <!-- gallery-item-->
+                        <div class="gallery-item    web branding">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g1.jpg'%} "    alt="">
+                                <!-- <div class="grid-det">
+                                    <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                    <div class="grid-det-item">
+                                        <a href="portfolio-single.html" class="grid-det_link">Fitness Studio  Website</a>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->
+                        <!-- gallery-item-->
+                        <div class="gallery-item  photography uides">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g2.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->
+                        <!-- gallery-item-->
+                        <div class="gallery-item  web">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g3.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g4.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->                           
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g5.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g6.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g7.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g8.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g9.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g10.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g11.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g12.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g13.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g14.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g15.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g16.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g17.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g18.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g19.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                        <!-- gallery-item-->
+                        <div class="gallery-item gallery-item-second  photography">
+                            <div class="grid-item-holder">
+                                <img  src="{% static 'images/g20.jpg'%}"    alt="">
+                                
+                            </div>
+                        </div>
+                        <!-- gallery-item end-->  
+                                                   
+                    </div>
+                </div>
+            </div>
+            <!--  hero-showcase-wrap end -->					
+            <div class="showcase-dec_container">
+                <div class="showcase-dec_corner sdc_topleft"></div>
+                <div class="showcase-dec_corner sdc_bottomleft"></div>
+                <div class="showcase-dec_corner sdc_bottomright"></div>
+                <div class="showcase-dec_line sdl_right"></div>
+                <div class="showcase-dec_line sdl_left"></div>
+                <div class="showcase-dec_line sdl_top"></div>
+                <div class="showcase-dec_title">Gallery</div>
+            </div>
+        </div>
+    </div>
+    <!-- content-holder end -->
+</div>
+<!-- wrapper end -->
+<!-- share-wrapper-->
+<div class="share-wrapper fs-wrapper isShare">
+    <div class="share-overlay cl_sh fs-wrapper"></div>
+    <div class="share-container fl-wrap  isShare">
+        <div class="share-text">
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <defs>
+                    <path id="circle"
+                        d="
+                        M 50, 50
+                        m -37, 0
+                        a 37,37 0 1,1 74,0
+                        a 37,37 0 1,1 -74,0"/>
+                </defs>
+                <text font-size="17">
+                    <textpath xlink:href="#circle">
+                        Share This Page  
+                    </textpath>
+                </text>
+            </svg>
+        </div>
+        <div class="close-share-btn cl_sh"><i class="fal fa-times"></i></div>
+    </div>
+</div>
+<!-- share-wrapper  end -->	
+<!-- cursor-->
+<div class="element">
+    <div class="element-item"></div>
+</div>
+<!-- cursor end-->			
+</div>
+
+{% endblock %}

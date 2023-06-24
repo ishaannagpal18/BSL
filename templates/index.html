@@ -1,0 +1,1163 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+BSL Association
+{% endblock %}
+{% block style %}
+<style>
+    #myImg{
+        width:100%;  
+    }
+    .geeks img {
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+        }
+     
+    .geeks:hover img {
+        transform: scale(1.3);
+    }
+    
+    
+    
+</style>
+  {% endblock %}
+
+{% block content %}
+<!-- wrapper -->
+<div id="wrapper">
+    <!--hero-content  -->
+    <div class="hero-content full-height" id="sec1">
+        <!-- fs-wrapper -->
+        <div class="fs-wrapper dark-bg2">
+            <!--slideshow-container-->
+            <div class="slideshow-container_wrap fs-wrapper desktop desktop1">
+                <div class="swiper-container full-height">
+                    <div class="swiper-wrapper desktop">
+                        
+                        
+                        <!--ms_item-->
+                        <div class="swiper-slide desktop">
+                            <div class="ms-item_fs full-height fl-wrap">
+                                <div class="bg"  data-bg="{% static 'images/banner17.jpeg'%}"></div>
+                            </div>
+                        </div>
+                        <!--ms_item end-->
+                        <!--ms_item-->
+                        <div class="swiper-slide desktop">
+                            <div class="ms-item_fs full-height fl-wrap">
+                                <div class="bg"  data-bg="{% static 'images/banner16.jpeg'%}"></div>
+                            </div>
+                        </div>
+                        <!--ms_item end-->
+                        <!--ms_item-->
+                        <div class="swiper-slide desktop">
+                            <div class="ms-item_fs full-height fl-wrap">
+                                <div class="bg"  data-bg="{% static 'images/banner19.jpeg'%}"></div>
+                            </div>
+                        </div>
+                        <!--ms_item end-->
+                    </div>
+
+                    
+
+                </div>
+            </div>
+            <div class="slideshow-container_wrap fs-wrapper mobile">
+                <div class="swiper-container full-height">
+                    
+                    <div class="swiper-wrapper mobile">
+                        <!--ms_item-->
+                        <div class="swiper-slide mobile">
+                            <div class="ms-item_fs  full-height fl-wrap">
+                                <div style="padding-top: 22%;" class="bg"  data-bg="{% static 'images/banner19.jpg'%} "  ></div>
+                            </div>
+                        </div>
+                        <!--ms_item end-->
+                        <!--ms_item-->
+                        <div class="swiper-slide mobile">
+                            <div class="ms-item_fs full-height fl-wrap">
+                                <div style="padding-top: 22%;" class="bg"  data-bg="{% static 'images/banner19.jpg'%}"></div>
+                            </div>
+                        </div>
+                        <!--ms_item end-->
+                        <!--ms_item-->
+                        <div class="swiper-slide mobile">
+                            <div class="ms-item_fs full-height fl-wrap">
+                                <div style="padding-top: 22%;" class="bg"  data-bg="{% static 'images/banner19.jpg'%}"></div>
+                            </div>
+                        </div>
+                        <!--ms_item end-->
+                    </div>
+
+                </div>
+            </div>
+            <!--slideshow-container end-->  					
+            <div class="fs-slider_align_title fsat_single">
+                <div class="fs-slider_align_title_container">
+                    <h2>Brands and Sourcing <br> <span>Leaders Association</span></h2>
+                    <h2 style="font-size:2rem; line-height: 45px;">GLOCAL MANOEUVRE SERIES <br> POWERPLAY-2</h2>
+                    <a style="margin-right: 2rem;" href="{% url 'gallery'%}" class="half-hero-wrap_link">Click Here To Know More</a>
+                </div>
+            </div>
+            <div class="overlay"><a href="{% url 'App_Login:register'%}" style="display: block;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 999999;">&nbsp;</a></div>
+          
+            <div style="height:90%" class="hero-video_single">
+                <div class="bg" data-bg="{% static 'images/banner19.jpg'%} "><a href="{% url 'App_Login:register'%}" style="display: block;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 999999;">&nbsp;</a></div>
+                <div style="opacity:0; z-index:3;	" class="overlay"></div>
+                <!-- <a href="{% url 'App_Login:register'%}"><div style="display: none;" class="promo-video-btn" ><span><i class="fas fa-play"></i></span> </div></a>
+                <a href="{% url 'App_Login:register'%}"><div style="display:none;" id="video1" class="popup_video" data-videolink="video/1.mp4">
+                    <video class="lg-video-object lg-html5" controls preload="none">
+                        <source src="/" type="video/mp4">
+                    </video>
+                </div></a> -->
+                <div class="hsv_title color-bg">Glocal Manoeuvre Series</div>
+                <a href="{% url 'App_Login:register'%}" class="custom-scroll-link start-btn_sin"><span> Click Here To Know More <i class="fal fa-long-arrow-down"></i></span></a>
+            </div>
+        
+            <div style="display:none" class="hero-carousel_pagination_wrap hcpw2">
+                <div class="hcp_wrap">
+                    <div class="current_s_wrap">
+                        <div class="current_s">01</div>
+                    </div>
+                    <div class="total_s"></div>
+                </div>
+                <div class="hero-carousel_pagination "></div>
+            </div>
+        </div>
+        <!-- fs-wrapper end -->
+    </div>
+    <!--hero-content end-->
+    <!-- fixed-column-image -->
+    <div class="fixed-column-image-wrap">
+        <div class="fixed-column-image fs-wrapper">
+            <div style="height:100vh" class="bg hor_scroll"  data-bg="{% static 'images/banner19.jpg'%}"></div>
+            <div class="overlay"><a href="{% url 'App_Login:register'%}" style="display: block;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 999999;">&nbsp;</a></div>
+            <div style="display: none;" class="overlay-dec"></div>
+        </div>
+        <footer class="column-footer">
+            <div class="column-footer_arrow-dec_wrap color-bg">
+                <div class="arrow_dec_wrap">
+                    <div class="arrow_dec"></div>
+                </div>
+            </div>
+            <div class="column-footer_head">Scroll  Down</div>
+            <div class="column-footer_content fl-wrap">
+                <div class="column-footer_title"><span>BSL Mission</span></div>
+            </div>
+            <div class="dir-arrow"></div>
+        </footer>
+        <div style="display:none;" class="fci_progress-bar-wrap dark-bg">
+            <div class="ver_progress-bar_wrap">
+                <div class="ver_progress-bar color-bg"></div>
+            </div>
+            <div class="pbw_animicon">
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="hero-arrows_dec"></div>
+    </div>
+    <!-- fixed-column-image end -->
+    <!-- scroll-nav-container -->
+    <div class="scroll-nav-container">
+        <div class="page-scroll-nav">
+            <div class="scroll-down-container">
+                <div class="scroll-down-wrap">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden_wrap_btn"><span></span></div>
+            <nav class="scroll-init page-scroll-nav_wrap">
+                <ul>
+                    <li><a class="scroll-link fbgs act-sec" href="#sec1"  data-bgtext="Home"  data-bgnum="01"><span>Home</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec2"  data-bgtext="About"  data-bgnum="02"><span>About</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec3"  data-bgtext="Membership"  data-bgnum="03"><span>Membership</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec4"  data-bgtext="Testimonials"  data-bgnum="04"><span>Testimonials</span></a></li>
+                    <li><a class="scroll-link fbgs" href="#sec5"  data-bgtext="BSL Member"  data-bgnum="05"><span>News Story</span></a></li>
+
+                </ul>
+            </nav>
+            <div class="section-counter color-bg">
+                <div class="section-counter_cuurent"><span>01</span></div>
+                <div class="section-counter_total"></div>
+            </div>
+        </div>
+    </div>
+    <!-- scroll-nav-container end -->
+    <!-- column-wrap -->
+    <div class="column-wrap hcw_sin">
+        <div class="content fl-wrap full-height">
+            <!-- section -->
+            <section id="sec2" class="scroll_sec">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>BSL Mission</h2>
+                        <p>BSL- Brands and Sourcing Leaders Association, is a non-profit organization that represents Sourcing Leaders from the Domestic and Exports. We as a body have a comprehensive vision to bridge the gap between government policies and the apparel industry by guiding the policy makers about the advanced needs of the industry.
+
+                            <br><br> The association is formed to accelerate the growth of the Apparel Industry in the Country, and make the whole world wear “Make in India”.</p>
+                    </div>
+                    <div class="about_row">
+                        <div class="block_text">
+                            <h2>पंच पहल / PANCH PAHL</h2>
+                            <b><p>MMF 10X (MAN MADE FIBRES & TECHNICAL TEXTILES)</p>
+                            <p>REALIZING A TRILLION $ GOAL (COST ENGINEERING, CAPACITY BUILDING & SMART FACTORIES)</p>
+                            <p>A PARADIGM SHIFT IN DIGITALIZATION & AUTOMATION</p>
+                            <p>GOOD EARTH (SUSTAINABILITY, TRACEABILITY & ESG GOAL)</p>
+                            <p>IMPORT SUBSTITUTION & UPSCALING (YARN, FIBRE, FABRICS, TRIMS & ACCESSORIES)</p></b>
+                            <a href="#" class="btn   fl-btn color-bg"><span>Know More</span></a>							
+                        </div>
+                        <div class="block_img">
+                            <img src="{% static 'images/header3.jpeg'%} " class="respimg" alt="">
+                            <!-- <div class="about-img-hotifer dark-bg">
+                                <p>Your website is fully responsive so visitors can view your content from their choice of device.</p>
+                                <h4>Mark Antony</h4>
+                                <h5>Cyberbook CEO</h5>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="ticker-wrap fl-wrap">
+                        <div class="content-marquee-outer">
+                            <div class="content-marquee-inner">
+                                <div class="ticker" data-text="Brands and Sourcing Leaders Association">Brands and Sourcing Leaders Association</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-number"> <span>0</span>1. </div>
+                <div class="sec-dec" style="left: -270px; bottom: -5%"></div>
+                <div class="dec_cirlce" style="right: -120px; top: 350px"><span></span></div>
+                <div class="sec-lines"></div>
+            </section>
+            <!-- section end -->
+            <section class="no-bottom-padding dark-bg scroll_sec" id="sec2">
+                <div class="section-number"> <span>0</span>2. </div>
+                <div class="container">
+                    <div class="section-title">
+                        <h2>BSL ACTION DRIVE</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.  </p> -->
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="half-carousel-wrap">
+                    <div class="half-carousel-conatiner fl-wrap">
+                        <div class="half-carousel fl-wrap full-height">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!--half-carousel-item   -->
+                                    <div id="myModal" class="swiper-slide">
+                                        <span class="close">&times;</span>
+                                        <div class="half-carousel-item fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/p1.jpg'%}" alt="">
+                                                <!-- <div id="img01" class="bg" data-bg="{% static 'images/p1.jpg'%} " data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Ui/Ux</a> <a href="#">Barnding</a></div> -->
+                                            <span class="testi-number color-bg">.01</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Fitness Studio Website</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!--half-carousel-item end -->
+                                    <!--half-carousel-item   -->
+                                    <div class="swiper-slide">
+                                        <div class="half-carousel-item fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/p2.jpg'%}" alt="">
+                                                <!-- <div class="bg" data-bg="{% static 'images/p2.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Branding</a> <a href="#">Webdesign</a></div> -->
+                                            <span class="testi-number color-bg">.02</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Project Endoran</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!--half-carousel-item end -->
+                                    <!--half-carousel-item   -->
+                                    <div class="swiper-slide">
+                                        <div class="half-carousel-item fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/p3.jpg'%}" alt="">
+                                                <!-- <div class="bg" data-bg="{% static 'images/p3.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Photography</a> <a href="#">Branding</a></div> -->
+                                            <span class="testi-number color-bg">.03</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Trinity Motobike Company</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!--half-carousel-item end -->
+                                    <!--half-carousel-item   -->
+                                    <div class="swiper-slide">
+                                        <div class="half-carousel-item fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks" >
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/p4.jpg'%}" alt="">
+                                                <!-- <div class="bg" data-bg="{% static 'images/p4.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Webdesign</a> <a href="#">Ecommerce</a></div> -->
+                                            <span class="testi-number color-bg">.04</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Coffeshop Website</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!--half-carousel-item end -->
+                                    <div class="swiper-slide">
+                                        <div class="half-carousel-item fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/p5.jpg'%}" alt="">
+                                                <!-- <div class="bg" data-bg="{% static 'images/p5.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Webdesign</a> <a href="#">Ecommerce</a></div> -->
+                                            <span class="testi-number color-bg">.05</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Coffeshop Website</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                        <!--half-carousel-item   -->
+                                        <div class="swiper-slide">
+                                            <div class="half-carousel-item fl-wrap">
+                                                <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                    <div class="overlay"></div>
+                                                    <img id="myImg" src="{% static 'images/p6.jpg'%}" alt="">
+                                                    <!-- <div class="bg" data-bg="{% static 'images/p6.jpg'%} " data-swiper-parallax="10%"></div> -->
+                                                </div>
+                                                <!-- <div class="grid-det_category"><a href="#">Ui/Ux</a> <a href="#">Barnding</a></div> -->
+                                                <span class="testi-number color-bg">.06</span>	
+                                                <!-- <div class="half-carousel-content">
+                                                    <h3><a href="portfolio-single.html">Fitness Studio Website</a></h3>
+                                                    <p>Constant care and attention to the patients makes good record</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--half-carousel-item end -->
+                                        <!--half-carousel-item   -->
+                                        <div class="swiper-slide">
+                                            <div class="half-carousel-item fl-wrap">
+                                                <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                    <div class="overlay"></div>
+                                                    <img id="myImg" src="{% static 'images/p7.jpg'%}" alt="">
+                                                    <!-- <div class="bg" data-bg="{% static 'images/p7.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                                </div>
+                                                <!-- <div class="grid-det_category"><a href="#">Branding</a> <a href="#">Webdesign</a></div> -->
+                                                <span class="testi-number color-bg">.07</span>	
+                                                <!-- <div class="half-carousel-content">
+                                                    <h3><a href="portfolio-single.html">Project Endoran</a></h3>
+                                                    <p>Constant care and attention to the patients makes good record</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--half-carousel-item end -->
+                                        <!--half-carousel-item   -->
+                                        <div class="swiper-slide">
+                                            <div class="half-carousel-item fl-wrap">
+                                                <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                    <div class="overlay"></div>
+                                                    <img id="myImg" src="{% static 'images/p8.jpg'%}" alt="">
+                                                    <!-- <div class="bg" data-bg="{% static 'images/p8.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                                </div>
+                                                <!-- <div class="grid-det_category"><a href="#">Photography</a> <a href="#">Branding</a></div> -->
+                                                <span class="testi-number color-bg">.08</span>	
+                                                <!-- <div class="half-carousel-content">
+                                                    <h3><a href="portfolio-single.html">Trinity Motobike Company</a></h3>
+                                                    <p>Constant care and attention to the patients makes good record</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--half-carousel-item end -->
+                                        <!--half-carousel-item   -->
+                                        <div class="swiper-slide">
+                                            <div class="half-carousel-item fl-wrap">
+                                                <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                    <div class="overlay"></div>
+                                                    <img id="myImg" src="{% static 'images/p10.jpg'%}" alt="">
+                                                    <!-- <div class="bg" data-bg="{% static 'images/p10.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                                </div>
+                                                <!-- <div class="grid-det_category"><a href="#">Webdesign</a> <a href="#">Ecommerce</a></div> -->
+                                                <span class="testi-number color-bg">.09</span>	
+                                                <!-- <div class="half-carousel-content">
+                                                    <h3><a href="portfolio-single.html">Coffeshop Website</a></h3>
+                                                    <p>Constant care and attention to the patients makes good record</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--half-carousel-item end -->
+                                        <div class="swiper-slide">
+                                            <div class="half-carousel-item fl-wrap">
+                                                <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                    <div class="overlay"></div>
+                                                    <img id="myImg" src="{% static 'images/p9.jpg'%}" alt="">
+                                                    <!-- <div class="bg" data-bg="{% static 'images/p9.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                                </div>
+                                                <!-- <div class="grid-det_category"><a href="#">Webdesign</a> <a href="#">Ecommerce</a></div> -->
+                                                <span class="testi-number color-bg">.10</span>	
+                                                <!-- <div class="half-carousel-content">
+                                                    <h3><a href="portfolio-single.html">Coffeshop Website</a></h3>
+                                                    <p>Constant care and attention to the patients makes good record</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="half-carousel_controls fl-wrap">
+                            <div class="hcw_btn_wrap">
+                                <div class="hcw_btn hcw-cont-prev"><i class="fal fa-angle-left"></i></div>
+                                <div class="hcw_btn hcw-cont-next"><i class="fal fa-angle-right"></i></div>
+                            </div>
+                            <div class="cen-slider-pagination_wrap">
+                                <div class="cen-slider-pagination"></div>
+                            </div>
+                            <!-- <a href="portfolio.html" class="fpc_btn"><span>View All Projects</span> <i class="fal fa-angle-right"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section  -->
+            <!-- <section class="no-padding">
+                <div class="half-bg-wrap fl-wrap">
+                    <div class="half-bg">
+                        <div class="bg"  data-bg="{% static 'images/bg/1.jpg'%} "></div>
+                        <div class="overlay"></div>
+                        <div class="half-bg_title">
+                            <h2>Some <br> Facts</h2>
+                        </div>
+                    </div>
+                    <div class="half-bg-container dark-bg">
+                        <div class="inline-facts-container">
+                            <div class="container">
+                          
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="145">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Finished projects</h6>
+                                    </div>
+                                </div>
+                             
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="357">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Happy customers</h6>
+                                    </div>
+                                </div>
+                              
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="825">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Working hours</h6>
+                                    </div>
+                                </div>
+                               
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="15">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Awards won</h6>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                        </div>
+                        <div class="half-bg-container_dec"></div>
+                        <div class="chart-dec"><span><i class="fal fa-plus"></i></span></div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- section end-->
+            <!-- section  -->
+            
+            <!-- section end-->
+            <!-- section  -->
+            
+            <!--section end-->														
+            <!--section  -->	
+            <section class="dec_sec">
+                <div class="container">
+                    <div class="text-row">
+                        <div class="text-column">
+                            <div class="text-column_title">
+                                <h4 style="font-size:1.8rem">About Us</h4>
+                                <h2>BSL represents over USD 30 Billion of Domestic and International Buying of Textiles & Apparel. BSL is the only association that brings together international & Domestic brand Leaders.</h2>
+                            </div>
+                        </div>
+                        <div class="text-column">
+                            <p>Our members include Brands and Sourcing Leaders representing 250+Brands and Sourcing Houses like Marks & Spencer, ZARA, H&M, Aditya Birla, Arvind fashion, Triburg, Newtimes, PDS Group, Spykar, Nike, Adidas, French Connection UK, Li&fung, Next, Bestsellers, Myntra, GAP, Macy’s, Target, Jockey, Landmark, Nykaa, to name a few.</p>
+                            <p>We have successfully conducted many conferences in Delhi and Bangalore. Glocal Textile Summit held in Delhi on 16th September 2022, had a large Industry leaders’ presence & representation from delegates from the Ministry of Textiles making it a successful and effective event.(Please review gallery For event pictures)</p>
+                            <p>BSL has also opened International chapters globally - USA(East coast), USA(West coast), Japan, UK, UAE, France, more are under process.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="cards-row">
+                      	
+                        <div class="card-item">
+                            <div class="card-item-inner">
+                                <div class="dec-icon act-link">
+                                    <i class="fal fa-users-cog"></i>
+                                </div>
+                                <h3>User Admin Panel</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>
+                            </div>
+                            <span class="testi-number color-bg">.01</span>										
+                        </div>
+                       	
+                        <div class="card-item">
+                            <div class="card-item-inner">
+                                <div class="dec-icon  ">
+                                    <i class="fal fa-headset"></i>
+                                </div>
+                                <h3>24 Hours Support</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>
+                            </div>
+                            <span class="testi-number color-bg">.02</span>										
+                        </div>
+                      
+                        <div class="card-item">
+                            <div class="card-item-inner">
+                                <div class="dec-icon  ">
+                                    <i class="fal fa-phone-laptop"></i>
+                                </div>
+                                <h3>Mobile Friendly</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>
+                            </div>
+                            <span class="testi-number color-bg">.03</span>									
+                        </div>
+                        	
+                        <div class="card-item">
+                            <div class="card-item-inner">
+                                <div class="dec-icon  ">
+                                    <i class="fal fa-rocket"></i>
+                                </div>
+                                <h3>Seo Friendly</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>
+                            </div>
+                            <span class="testi-number color-bg">.04</span>									
+                        </div>
+                      									
+                    </div> -->
+                    <!--order-wrap-->		
+                    <div class="order-wrap   dark-bg">
+                        <h4>Why would someone want to be a Member?</h4>
+                        <a href="#" class="btn color-bg"><span>Member Login</span></a>
+                    </div>
+                    <!-- order-wrap end -->											
+                </div>
+                <div class="dec_cirlce" style="left: -120px; bottom: -120px"><span></span></div>
+                <div class="dec_cirlce" style="right: -120px; top: 350px"><span></span></div>
+                <div class="sec-lines"></div>
+            </section>
+            <!--section end-->	
+            <section class="no-bottom-padding dark-bg scroll_sec" id="sec2">
+                <div class="section-number"> <span>0</span>3. </div>
+                <div class="container">
+                    <div class="section-title">
+                        <h2>MEMBERS VIEW</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.  </p> -->
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="half-carousel-wrap">
+                    <div class="half-carousel-conatiner fl-wrap">
+                        <div class="half-carousel fl-wrap full-height">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!--half-carousel-item   -->
+                                    <div class="swiper-slide">
+                                        <div class="half-carousel-item half-carousel-item1 fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/m1.jpg'%}" alt="">
+                                                <!-- <div class="bg" data-bg="{% static 'images/m1.jpg'%} " data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Ui/Ux</a> <a href="#">Barnding</a></div> -->
+                                            <span class="testi-number color-bg">.01</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Fitness Studio Website</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!--half-carousel-item end -->
+                                    <!--half-carousel-item   -->
+                                    <div class="swiper-slide">
+                                        <div class="half-carousel-item half-carousel-item1 fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/m2.jpg'%}" alt="">
+                                                <!-- <div class="bg" data-bg="{% static 'images/m2.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Branding</a> <a href="#">Webdesign</a></div> -->
+                                            <span class="testi-number color-bg">.02</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Project Endoran</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!--half-carousel-item end -->
+                                    <!--half-carousel-item   -->
+                                    <div class="swiper-slide">
+                                        <div class="half-carousel-item half-carousel-item1 fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/m3.jpg'%}" alt="">
+                                                <!-- <div class="bg" data-bg="{% static 'images/m3.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Photography</a> <a href="#">Branding</a></div> -->
+                                            <span class="testi-number color-bg">.03</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Trinity Motobike Company</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!--half-carousel-item end -->
+                                    <!--half-carousel-item   -->
+                                    <div class="swiper-slide">
+                                        <div class="half-carousel-item half-carousel-item1 fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/m4.jpg'%}" alt="">
+                                                <!-- <div class="bg" data-bg="{% static 'images/m4.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Webdesign</a> <a href="#">Ecommerce</a></div> -->
+                                            <span class="testi-number color-bg">.04</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Coffeshop Website</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!--half-carousel-item end -->
+                                    <div class="swiper-slide">
+                                        <div class="half-carousel-item half-carousel-item1 fl-wrap">
+                                            <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                <div class="overlay"></div>
+                                                <img id="myImg" src="{% static 'images/m5.jpg'%}" alt="">
+                                                <!-- <div class="bg" data-bg="{% static 'images/m5.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                            </div>
+                                            <!-- <div class="grid-det_category"><a href="#">Webdesign</a> <a href="#">Ecommerce</a></div> -->
+                                            <span class="testi-number color-bg">.05</span>	
+                                            <!-- <div class="half-carousel-content">
+                                                <h3><a href="portfolio-single.html">Coffeshop Website</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                        <!--half-carousel-item   -->
+                                        <div class="swiper-slide">
+                                            <div class="half-carousel-item half-carousel-item1 fl-wrap">
+                                                <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                    <div class="overlay"></div>
+                                                    <img id="myImg" src="{% static 'images/m6.jpg'%}" alt="">
+                                                    <!-- <div class="bg" data-bg="{% static 'images/m6.jpg'%} " data-swiper-parallax="10%"></div> -->
+                                                </div>
+                                                <!-- <div class="grid-det_category"><a href="#">Ui/Ux</a> <a href="#">Barnding</a></div> -->
+                                                <span class="testi-number color-bg">.06</span>	
+                                                <!-- <div class="half-carousel-content">
+                                                    <h3><a href="portfolio-single.html">Fitness Studio Website</a></h3>
+                                                    <p>Constant care and attention to the patients makes good record</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--half-carousel-item end -->
+                                        <!--half-carousel-item   -->
+                                        <div class="swiper-slide">
+                                            <div class="half-carousel-item half-carousel-item1 fl-wrap">
+                                                <div class="bg-wrap bg-parallax-wrap-gradien geeks">
+                                                    <div class="overlay"></div>
+                                                    <img id="myImg" src="{% static 'images/m7.jpg'%}" alt="">
+                                                    <!-- <div class="bg" data-bg="{% static 'images/m7.jpg'%}" data-swiper-parallax="10%"></div> -->
+                                                </div>
+                                                <!-- <div class="grid-det_category"><a href="#">Branding</a> <a href="#">Webdesign</a></div> -->
+                                                <span class="testi-number color-bg">.07</span>	
+                                                <!-- <div class="half-carousel-content">
+                                                    <h3><a href="portfolio-single.html">Project Endoran</a></h3>
+                                                    <p>Constant care and attention to the patients makes good record</p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <!--half-carousel-item end -->
+                                        
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="half-carousel_controls fl-wrap">
+                            <div class="hcw_btn_wrap">
+                                <div class="hcw_btn hcw-cont-prev"><i class="fal fa-angle-left"></i></div>
+                                <div class="hcw_btn hcw-cont-next"><i class="fal fa-angle-right"></i></div>
+                            </div>
+                            <div class="cen-slider-pagination_wrap">
+                                <div class="cen-slider-pagination"></div>
+                            </div>
+                            <!-- <a href="portfolio.html" class="fpc_btn"><span>View All Projects</span> <i class="fal fa-angle-right"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </section>	
+            
+            <section id="sec3" class="scroll_sec">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>MEMBERSHIP</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.  </p> -->
+                    </div>
+                    <!-- items-list-conatiner -->
+                    <div class="items-list-conatiner">
+                        <!-- list-item -->
+                        <div class="list-item  fl-wrap" data-bgsrc="{% static 'images/corporat-membership.png'%} ">
+                            <div class="reval-image">
+                                <div class="bg"></div>
+                            </div>
+                            <div class="list-item_link fl-wrap">
+                                <div class="list-item-header"><span>01</span>Corporate Membership</div>
+                                <div class="list-item-details">
+                                    <ul class="pdcw_list fl-wrap">
+                                        <li>Brands, Retailers, E-tailers</li>
+                                        <li>Buying Houses</li>
+                                        <li>Liaison Offices</li>
+                                    </ul>
+                                </div>
+                                <div  class="list-item-link_dec color-bg"></div>
+                            </div>
+                            <div class="list-item_content fl-wrap">
+                                <div class="piechart-holder" data-skcolor="#fff">
+                                    
+                                    <img style="width:100%" src="{% static 'images/pic2.jpg'%}" alt="">
+                                    
+                                </div>
+                                <div class="list-item_content_wrap">
+                                    <h4>Membership Details</h4>
+                                    <p>The CEO/MD of these companies will become the member and thencan nominate or become a direct Member (Sourcing Head /Buying Head of the Organization) Member Companies need to be 250 Cr plus in revenue to qualify</p>
+                                    
+                                    <!-- <p>Cras mattis iudicium purus sit amet fermentum at nos hinc posthac, sitientis piros afros. Lorem ipsum dolor sit amet, consectetur adipisici elit, petierunt uti sibi concilium totius Galliae in diem sed eius mod tempor incidunt ut labore et dolore magna aliqua.</p> -->
+                                    <!-- <div class="price-content">
+                                        <span>Price:</span>
+                                        150$ - 560$
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-item end -->
+                        <!-- list-item -->
+                        <div class="list-item fl-wrap" data-bgsrc="{% static 'images/individual-membership.png'%}">
+                            <div class="reval-image">
+                                <div class="bg"></div>
+                            </div>
+                            <div class="list-item_link fl-wrap">
+                                <div class="list-item-header"><span>02</span>Individual Membership</div>
+                                <div class="list-item-details">
+                                    <ul class="pdcw_list fl-wrap">
+                                        <li>Retired Individual</li>
+                                        <li>Semi Retired Individual</li>
+                                        <li>Individual Contributor</li>
+                                    </ul>
+                                </div>
+                                <div class="list-item-link_dec color-bg"></div>
+                            </div>
+                            <div class="list-item_content fl-wrap">
+                                <div class="piechart-holder" data-skcolor="#fff">
+                                    
+                                    <img style="width:100%" src="{% static 'images/pic3.jpg'%}" alt="">
+                                    
+                                </div>
+                                <div class="list-item_content_wrap">
+                                    <h4>Membership Details</h4>
+                                    <p>Member Organizations may also take multiple membership based slab based (50k per additional member) . Ex: The Sustainability head can be nominated as part of organization</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-item end -->
+                        <!-- list-item -->
+                        <div class="list-item fl-wrap" data-bgsrc="{% static 'images/affiliate-membership.png'%}">
+                            <div class="reval-image">
+                                <div class="bg"></div>
+                            </div>
+                            <div class="list-item_link fl-wrap">
+                                <div class="list-item-header"><span>03</span>Affiliated Association</div>
+                                <div class="list-item-details">
+                                    <ul class="pdcw_list fl-wrap">
+                                        <li>AEPC</li>
+                                        <li>CMAI</li>
+                                        <li>TEA</li>
+                                        <li>RAI</li>
+                                        <li>Yarn/Accessories</li>
+                                    </ul>
+                                </div>
+                                <div  class="list-item-link_dec color-bg"></div>
+                            </div>
+                            <div class="list-item_content fl-wrap">
+                                <div class="piechart-holder" data-skcolor="#fff">
+                                    <div class="piechart-holder" data-skcolor="#fff">
+                                    
+                                        <img style="width:100%" src="{% static 'images/pic2.jpg'%}" alt="">
+                                        
+                                    </div>
+                                </div>
+                                <div class="list-item_content_wrap">
+                                    <h4>Membership Details</h4>
+                                    <p>Membership based on formal meetings Contracts , define the relationship and what we work on. Ex : A) Knowledge Sharing. <br>B) Discussion on key Initiatives.<br> C) Coworked Initiatives <br> D) Data Sharing etc.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-item end -->										
+                        <!-- list-item -->
+                        
+                        <!-- list-item end -->																
+                    </div>
+                    <!-- items-list-conatiner end-->
+                </div>
+                <div class="section-number"> <span>0</span>4. </div>
+                <div class="sec-dec" style="right: -270px; bottom: -15%"></div>
+                <div class="dec_cirlce" style="left: -120px; bottom: 150px"><span></span></div>
+                <div class="sec-lines"></div>
+            </section>
+            <!-- section  -->
+            <section class="dark-bg scroll_sec" id="sec3">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>GLOCAL TEXTILE SUMMIT<br>
+                            September 16th 2022 at <br>
+                            EROS- New Delhi</h2>
+                        <p>The summit was organised to develop capabilities in the country limiting import as and promoting exports. Industry Leaders from the Domestic and International buying brought their knowledge, success stories on the BSL platform to encourage young leaders and industry as a whole to flourish in all aspects.</p>
+                    </div>
+                    <div class="team-container">
+                        <!-- team-item  -->
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'images/g4.jpg'%} " alt="" class="respimg">
+                                
+                            </div>
+                            
+                        </div>
+                        <!-- team-item end  -->
+                        <!-- team-item  -->
+                        <div class="team-item">
+                            
+                            <div class="team-img">
+                                <img src="{% static 'images/g5.jpg'%}" alt="" class="respimg">
+                                
+                            </div>
+                        </div>
+                        <!-- team-item end  -->												
+                        <!-- team-item  -->
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'images/g6.jpg'%}" alt="" class="respimg">
+                                
+                            </div>
+                            <!-- <div class="team-header">
+                                <h4>Ketty Anderson</h4>
+                                <h6>Junior Designer</h6>
+                            </div> -->
+                        </div>
+                        <!-- team-item end  -->												
+                        <!-- team-item  -->
+                        <div class="team-item">
+                            <!-- <div class="team-header">
+                                <h4>Fill Domentore</h4>
+                                <h6>Senior Developer</h6>
+                            </div> -->
+                            <div class="team-img">
+                                <img src="{% static 'images/g7.jpg'%}" alt="" class="respimg">
+                                
+                            </div>
+                        </div>
+                        <!-- team-item end  -->												
+                    </div>
+                </div>
+                <div class="section-number"> <span>0</span>5. </div>
+                <div class="sec-dec" style="left: -270px; bottom: -5%"></div>
+            </section>
+            <!-- section end-->	
+            <!-- section  -->
+            <section class="no_bottom_padding scroll_sec" id="sec4">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>TESTIMONIALS - INDUSTRY LEADERS</h2>
+
+                    </div>
+                </div>
+                <div class="testimonilas-carousel_wrap fl-wrap">
+                    <div class="testimonilas-carousel fl-wrap">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!--testi-item-->
+                                <div class="swiper-slide">
+                                    <div class="testi-item fl-wrap">
+                                        <span class="testi-number color-bg">.01</span>
+                                        <div class="testimonilas-text   fl-wrap">
+                                            <p>"It was insightful and thought provoking for all people involved in the apparel sector. Would recommend
+                                                people involved in buying, sourcing and trim manufacturers to join this group and attend the future events
+                                                to contribute your views in developing the sector and contributing towards the growth of the Indian Apparel
+                                                Industry"</p>
+                                        </div>
+                                        <div class="testi-footer fl-wrap">
+                                            <!-- <div class="testi-avatar"><img src="{% static 'images/avatar/1.jpg'%} " alt=""></div> -->
+                                            <h3>Sapna Adavi</h3>
+                                            <a href="#" class="testi-link" target="_blank">Sourcing – Bengaluru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--testi-item end-->
+                                <!--testi-item-->
+                                <div class="swiper-slide">
+                                    <div class="testi-item fl-wrap">
+                                        <span class="testi-number color-bg">.02</span>
+                                        <div class="testimonilas-text   fl-wrap">
+                                            <p>"The event was amazing and went very smoothly. Overall, good knowledge sessions.
+                                                # Digitalization, # Sustainability, # Make in India, everyone involved from sourcing fraternity is building
+                                                up the thrust to accelerate Indian exports. Congratulations to all involved for such a successful work that
+                                                BSL is doing."</p>
+                                        </div>
+                                        <div class="testi-footer fl-wrap">
+                                            <h3>Neetu Jotwani</h3>
+                                            <a href="#" class="testi-link" target="_blank">Sr. Vice President</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--testi-item end-->
+                                													
+                                <!--testi-item-->
+                                <div class="swiper-slide">
+                                    <div class="testi-item fl-wrap">
+                                        <span class="testi-number color-bg">.03</span>
+                                        <div class="testimonilas-text   fl-wrap">
+                                            <p>"How uplifting and thoughtful of BSL team on this dynamism approach with great integrity and faith. The
+                                                issues that were overlooked and forgotten about have been taken up by you all with pronounced
+                                                resourcefulness. We need more people like you up in the Indian subcontinent. Thank you for your
+                                                wonderful event."</p>
+                                        </div>
+                                        <div class="testi-footer fl-wrap">
+                                            <h3>Sanjay Vakharia</h3>
+                                            <a href="#" class="testi-link" target="_blank">CEO SPYKAR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--testi-item end-->													
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tc-button tc-button-next"><i class="fal fa-angle-right"></i></div>
+                    <div class="tc-button tc-button-prev"><i class="fal fa-angle-left"></i></div>
+                    <div class="tc-pagination"></div>
+                </div>
+                <!-- clients-carousel-wrap-->
+                
+                <!-- clients-carousel-wrap end-->
+                <div class="sec-lines"></div>
+                <div class="section-number"> <span>0</span>6. </div>
+            </section>
+            <!-- section end-->	
+            
+            <section id="sec5" class="dec_sec">
+                <div class="container">
+                    <div class="text-row">
+                        <div class="text-column">
+                            <div class="text-column_title">
+                                <h4 style="font-size:1.8rem">NEWS STORY</h4>
+                                <h2>WIDESPREAD OPPORTUNITIES 
+                                    IN THE INDIAN BAZAAR</h2>
+                            </div>
+                        </div>
+                        <div class="text-column">
+                            <p>India’s potential is unquestionable as India’s textiles sector is one of the oldest industries and it has a strong presence across the entire supply value chain.</p>
+                            <p>Investments in this incredibly varied industry have expanded. India exported textiles worth $20.5 billion in 2020. 
+                                $3.75 billion in foreign direct investment was made into the industry from April 2000 to December 2020. (FDI).</p>
+                            <p>The industry has benefited from FDI and other other investments during the past five years. In May 2021, the ICIL announced an investment of $2.6 million. The Indian government has approved 100% automation under the automated technique.</p>
+                            <p>The industry's output and exports are increasing thanks to additional investments made through initiatives like the Production Linked Incentive (PLI) and Scheme for Capital Building (SCBTS). </p>
+                            <p>India's textile industry is expected to bring in investments of US$120 billion by 2025 and increase exports to US$ 300 billion</p>
+                        </div>
+                    </div>
+                    <div class="cards-row">
+                      	
+                        <div class="card-item">
+                            <div class="card-item-inner">
+                                <div class="dec-icon act-link">
+                                    <i class="fal fa-users-cog"></i>
+                                </div>
+                                <h3>EXPORTS EXPANSION</h3>
+                                <p>Apparel exports recorded 30% increase in the FY22 to $16 billion compared to $12.3 billion in FY21. The exports of cotton yarns, fabrics, made-ups and handloom products rose by 55.11% to $15.244 billion in FY22. The export profits of Indian cotton yarn in 2021 were $4.69 billion i.e. 79.64% Year on Year growth rate. India accounts for 10.2% of the total global exports of raw cotton valued at $9.8 billion in FY22. As the core player in the regional economy, India is the gateway to South Asian markets ensuring the combined strength to create the second biggest textile and apparel industry in the world.</p>
+                            </div>
+                            <span class="testi-number color-bg">.01</span>										
+                        </div>
+                       	
+                        <div class="card-item">
+                            <div class="card-item-inner">
+                                <div class="dec-icon  ">
+                                    <i class="fal fa-headset"></i>
+                                </div>
+                                <h3>DOMESTIC GROWTH</h3>
+                                <p>The Domestic market is charged up by its sizeable young population at 808 million youth below the age of 35, building India the 6th largest fashion bazaar across the globe. Apparel Industry has 73% share of the total T&A market as the young population adopts aspiration-based fashion instead of need-based clothing. India`s domestic textile and apparel market will reach $220 billion by 2025 from $100 billion in FY19. The booming $54 billion Indian fashion retail is estimated to reach $118 billion by 2028 while the $6.35 billion active wear market (2018) is estimated to reach $13.58 billion by 2024.</p>
+                            </div>
+                            <span class="testi-number color-bg">.02</span>										
+                        </div>
+                      
+                        <div class="card-item">
+                            <div class="card-item-inner">
+                                <div class="dec-icon  ">
+                                    <i class="fal fa-phone-laptop"></i>
+                                </div>
+                                <h3>RETAIL EXPANSION</h3>
+                                <p>The retail industry growth is expected 9% over 2019-2030, from $779 billion (2019) to $1.4 trillion (2026) and over $1.8 trillion by 2030. The Organized retail growth was commendable with 50% from 2012-2020, valued at 12% of total retail market. Major retail categories are apparel and accessories at 18% and home and living at 6%. The India`s e-retail market is expected to grow to $120-140 billion by FY26, at 25-30% annually over the next 5 years. India has the 3rd highest number of e-retail shoppers only behind China and the USA.</p>
+                            </div>
+                            <span class="testi-number color-bg">.03</span>									
+                        </div>
+                        	
+                        
+                      									
+                    </div>
+                    <!--order-wrap-->		
+                    <!-- <div class="order-wrap   dark-bg">
+                        <h4>Why would someone want to be a Member?</h4>
+                        <a href="#" class="btn color-bg"><span>Member Login</span></a>
+                    </div> -->
+                    <!-- order-wrap end -->											
+                </div>
+                <div class="dec_cirlce" style="left: -120px; bottom: -120px"><span></span></div>
+                <div class="dec_cirlce" style="right: -120px; top: 350px"><span></span></div>
+                <div class="sec-lines"></div>
+            </section>
+
+            <section id="sec5" class="scroll_sec">
+                <div class="container">
+                    <div class="section-title">
+                        <!-- <h2>FLOURISHING RAW MATERIAL IMPORTS OF INDIA</h2> -->
+                        <p></p>
+                    </div>
+                    <div class="about_row">
+                        <div style="padding: 0px 60px 0 0;" class="block_text">
+                            <!-- s -->
+                            <p style="color:black">FLOURISHING RAW MATERIAL IMPORTS OF INDIA</p>
+                            <b><p>The demand of raw material and fabric is growing rapidly in the Indian market. There has been a phenomenal growth in Indian fashion retail, active wear, athleisure and women`s innerwear market which are valued at US$ 54 billion, $13.58 billion, $7.3 billion (2024) and $12 billion (2025) respectively induced by middle-class customers across the country.</p>
+                            <p>Textile and Apparel consumption reached $75 billion in 2021 and is estimated to touch $190 billion by 2025. India is one of the most alluring consumer markets for apparel outside the West. Over 300 international fashion brands are expected to enter India in 2022-23 as per McKinsey. Imports into India are booming.</p>
+                            <!-- <p>A PARADIGM SHIFT IN DIGITALIZATION & AUTOMATION</p>
+                            <p>GOOD EARTH (SUSTAINABILITY, TRACEABILITY & ESG GOAL)</p>
+                            <p>IMPORT SUBSTITUTION & UPSCALING (YARN, FIBRE, FABRICS, TRIMS & ACCESSORIES)</p> --></b>
+                            <a href="portfolio.html" class="btn   fl-btn color-bg"><span>Our portfolio</span></a>							
+                        </div>
+                        <div class="block_img">
+                            <img src="{% static 'images/flourshing.jpg'%} " class="respimg" alt="">
+                            <!-- <div class="about-img-hotifer dark-bg">
+                                <p>Your website is fully responsive so visitors can view your content from their choice of device.</p>
+                                <h4>Mark Antony</h4>
+                                <h5>Cyberbook CEO</h5>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="ticker-wrap fl-wrap">
+                        <div class="content-marquee-outer">
+                            <div class="content-marquee-inner">
+                                <div class="ticker" data-text="Brands and Sourcing Leaders Association">Brands and Sourcing Leaders Association</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-number"> <span>0</span>7. </div>
+                <div class="sec-dec" style="left: -270px; bottom: -5%"></div>
+                <div class="dec_cirlce" style="right: -120px; top: 350px"><span></span></div>
+                <div class="sec-lines"></div>
+            </section>
+
+            <section id="sec5" class="scroll_sec">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>GLOCAL MANOEUVRE SERIES <span style="color:red">POWERPLAY-1</span></h2>
+                        <!-- <h2 style="color:red">POWERPLAY-1</h2> -->
+                        <p></p>
+                    </div>
+                    <div class="about_row">
+                        <div class="block_text">
+                         
+                            <h2>GLOCAL TEXTILE CONVENTION</h2>              
+                            <b>
+                            <h2>17th & 18th December</h2>
+                            <p>Please visit us for -</p>
+                            <h4 style="text-align: left;
+                            padding-bottom: 10px;">Conference & Exhibition at STELLAR RESORTS - NH8 RAJOKRI</h4>
+                            <p>Key Features -</p>
+                            <p>MISSION MMF 10X </p>
+                            <p>MAN MADE FIBER + TECHNICAL TEXTILES </p>
+                            <p>UPSCALING YARNS, FABRICS & ACCESSORIES</p>
+                            <!-- <p>A PARADIGM SHIFT IN DIGITALIZATION & AUTOMATION</p>
+                            <p>GOOD EARTH (SUSTAINABILITY, TRACEABILITY & ESG GOAL)</p>
+                            <p>IMPORT SUBSTITUTION & UPSCALING (YARN, FIBRE, FABRICS, TRIMS & ACCESSORIES)</p> --></b>
+                            <a href="#" class="btn   fl-btn color-bg"><span>Read More</span></a>							
+                        </div>
+                        <div class="block_img">
+                            <img src="{% static 'images/powerplay.jpg'%} " class="respimg" alt="">
+                            <!-- <div class="about-img-hotifer dark-bg">
+                                <p>Your website is fully responsive so visitors can view your content from their choice of device.</p>
+                                <h4>Mark Antony</h4>
+                                <h5>Cyberbook CEO</h5>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="section-number"> <span>0</span>8. </div>
+                <div class="sec-dec" style="left: -270px; bottom: -5%"></div>
+                <div class="dec_cirlce" style="right: -120px; top: 350px"><span></span></div>
+                <div class="sec-lines"></div>
+            </section>
+        </div>
+    </div>
+    <!-- column-contaent end -->
+    {% endblock %}
+
+
+    {% block js %}
+    
+   
+  {% endblock %}
